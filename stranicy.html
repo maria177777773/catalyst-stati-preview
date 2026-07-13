@@ -1,430 +1,304 @@
 <!doctype html><html lang=ru><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
-<title>Хаб страниц SEO-фабрики Каталист</title>
-<style>
-:root{--ink:#17212b;--muted:#64748b;--line:#e2e8f0;--green:#0aba59}
-*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:#f7fafc;padding:24px}
-.wrap{max-width:1200px;margin:0 auto}
-h1{font-size:28px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 18px}
-.stats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 18px}
-.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 18px}
+<title>Хаб страниц SEO-фабрики Каталист</title><style>
+:root{--ink:#17212b;--muted:#64748b;--line:#e2e8f0;--green:#0aba59}*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 -apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:#f7fafc;padding:24px}
+.wrap{max-width:1200px;margin:0 auto}h1{font-size:28px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 18px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 18px}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 18px}
 .stat b{font-size:24px;display:block;color:var(--green)}.stat span{color:var(--muted);font-size:13px}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
-.filters button{border:1px solid var(--line);background:#fff;padding:7px 14px;border-radius:20px;cursor:pointer;font-size:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.filters button{border:1px solid var(--line);background:#fff;padding:7px 14px;border-radius:20px;cursor:pointer;font-size:14px}
 .filters button.on{background:var(--green);color:#fff;border-color:var(--green)}
 table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px #0001}
-th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-th{background:#eef4f8;font-size:13px;position:sticky;top:0}
-.sl{color:var(--muted);font-size:12px}
-.badge{padding:3px 9px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap}
-a{color:#1d4ed8;text-decoration:none}a:hover{text-decoration:underline}
-.go{white-space:nowrap;font-size:13px}
+th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eef4f8;font-size:13px;position:sticky;top:0}
+.sl{color:var(--muted);font-size:12px}.badge{padding:3px 9px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap}
+a{color:#1d4ed8;text-decoration:none}a:hover{text-decoration:underline}.go{white-space:nowrap;font-size:13px}
 .note{background:#fff8e6;border:1px solid #f0d98c;border-radius:10px;padding:12px 16px;margin:14px 0;font-size:13.5px}
 </style></head><body><div class=wrap>
 <h1>Хаб страниц SEO-фабрики <span style="color:var(--green)">Каталист</span></h1>
-<p class=sub>Все страницы фабрики: живые на сайте + черновики + новые. Обновлено 12.07.2026. Черновики открываются с локального превью (localhost:8890).</p>
-<div class=stats>
-<div class=stat><b>55</b><span>всего страниц</span></div>
-<div class=stat><b>17</b><span>на сайте (live)</span></div>
-<div class=stat><b>38</b><span>черновики</span></div>
-<div class=stat><b>39</b><span>новые сегодня</span></div>
-<div class=stat><b>53</b><span>готовы к публикации</span></div>
-</div>
-<div class=note>⚠️ Ничего не опубликовано — стоп-пауза на новые страницы до 14.07. Черновики готовы, ждут решения по ценам/кейсам/акцепторам. Живые страницы (17) — с обновлёнными текстами (передеплой после ОК).</div>
-<div class=filters>
-<button class=on onclick="flt('all',this)">Все (55)</button>
-<button onclick="flt('live',this)">🟢 На сайте (17)</button>
-<button onclick="flt('new',this)">✨ Новые (39)</button>
-<button onclick="flt('draft',this)">📝 Черновики</button>
-</div>
+<p class=sub>Все страницы: живые + черновики + новые. Обновлено 13.07.2026. Черновики — превью localhost:8890.</p>
+<div class=stats><div class=stat><b>55</b><span>всего</span></div><div class=stat><b>17</b><span>на сайте</span></div>
+<div class=stat><b>38</b><span>черновики</span></div><div class=stat><b>54</b><span>новые сегодня</span></div>
+<div class=stat><b>29</b><span>готовы</span></div></div>
+<div class=note>⚠️ Ничего не опубликовано — стоп-пауза на новые до 14.07. Черновики ждут решений по ценам/кейсам/акцепторам.</div>
+<div class=filters><button class=on onclick="flt('all',this)">Все (55)</button>
+<button onclick="flt('live',this)">🟢 На сайте (17)</button><button onclick="flt('new',this)">✨ Новые (54)</button>
+<button onclick="flt('draft',this)">📝 Черновики</button></div>
 <table><thead><tr><th>#</th><th>Страница</th><th>Тип</th><th>Статус</th><th>Слов</th><th>Готова</th><th></th></tr></thead>
-<tbody><tr data-status="live" data-type="T2">
-<td>1</td>
-<td><a href="https://catalystrussia.ru/korporativ/" target="_blank"><b>Корпоратив под ключ в Москве</b></a><br><span class=sl>/korporativ/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2369</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/korporativ/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>2</td>
-<td><a href="https://catalystrussia.ru/organizaciya-prazdnika/" target="_blank"><b>Организация корпоративного праздника под ключ в Москве</b></a><br><span class=sl>/organizaciya-prazdnika/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">1827</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/organizaciya-prazdnika/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>3</td>
-<td><a href="https://catalystrussia.ru/agentstvo-prazdnikov/" target="_blank"><b>Агентство праздников для компаний: организация под ключ в Мо</b></a><br><span class=sl>/agentstvo-prazdnikov/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">1745</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/agentstvo-prazdnikov/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>4</td>
-<td><a href="https://catalystrussia.ru/ivent-agentstvo/" target="_blank"><b>Ивент-агентство в Москве: Каталист, полный цикл с 2010 года</b></a><br><span class=sl>/ivent-agentstvo/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">1812</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/ivent-agentstvo/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>5</td>
-<td><a href="https://catalystrussia.ru/korporativnye-meropriyatiya/" target="_blank"><b>Корпоративные мероприятия в Москве: от деловой сессии до бол</b></a><br><span class=sl>/korporativnye-meropriyatiya/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">1927</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/korporativnye-meropriyatiya/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>6</td>
-<td><a href="https://catalystrussia.ru/novogodnij-korporativ/" target="_blank"><b>Организация новогоднего корпоратива под ключ в Москве</b></a><br><span class=sl>/novogodnij-korporativ/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">1879</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/novogodnij-korporativ/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>7</td>
-<td><a href="https://catalystrussia.ru/organizaciya-meropriyatiy/" target="_blank"><b>Организация мероприятий под ключ в Москве</b></a><br><span class=sl>/organizaciya-meropriyatiy/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2193</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/organizaciya-meropriyatiy/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>8</td>
-<td><a href="https://catalystrussia.ru/organizatsiya-korporativa/" target="_blank"><b>Организация корпоратива: от брифа до отчёта за 7 этапов</b></a><br><span class=sl>/organizatsiya-korporativa/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2212</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/organizatsiya-korporativa/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T1">
-<td>9</td>
-<td><a href="https://catalystrussia.ru/programmy/aktivnosti-na-korporativ/" target="_blank"><b>Активности на корпоратив</b></a><br><span class=sl>/programmy/aktivnosti-na-korporativ/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2405</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/programmy/aktivnosti-na-korporativ/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T1">
-<td>10</td>
-<td><a href="https://catalystrussia.ru/programmy/delovye-igry/" target="_blank"><b>Деловые игры для сотрудников</b></a><br><span class=sl>/programmy/delovye-igry/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2630</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/programmy/delovye-igry/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T1">
-<td>11</td>
-<td><a href="https://catalystrussia.ru/programmy/ecoferma/" target="_blank"><b>Экоферма: эко-тимбилдинг</b></a><br><span class=sl>/programmy/ecoferma/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2566</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/programmy/ecoferma/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T1">
-<td>12</td>
-<td><a href="https://catalystrussia.ru/programmy/igry-na-splochenie-kollektiva/" target="_blank"><b>Игры на сплочение коллектива</b></a><br><span class=sl>/programmy/igry-na-splochenie-kollektiva/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2975</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/programmy/igry-na-splochenie-kollektiva/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T1">
-<td>13</td>
-<td><a href="https://catalystrussia.ru/programmy/interaktivy-na-meropriyatiya/" target="_blank"><b>Интерактивы на мероприятия</b></a><br><span class=sl>/programmy/interaktivy-na-meropriyatiya/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2942</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/programmy/interaktivy-na-meropriyatiya/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T1">
-<td>14</td>
-<td><a href="https://catalystrussia.ru/programmy/kvest-dlya-komandy/" target="_blank"><b>Квест для команды: сюжетные и интеллектуальные форматы</b></a><br><span class=sl>/programmy/kvest-dlya-komandy/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2006</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/programmy/kvest-dlya-komandy/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>15</td>
-<td><a href="https://catalystrussia.ru/programmy/timbilding-s-neirosetyami/" target="_blank"><b>Тимбилдинг с нейросетями: командная игра и обучение для сотр</b></a><br><span class=sl>/programmy/timbilding-s-neirosetyami/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2508</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/programmy/timbilding-s-neirosetyami/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>16</td>
-<td><a href="https://catalystrussia.ru/timbilding/" target="_blank"><b>Тимбилдинг в Москве: более 50 авторских программ под ключ</b></a><br><span class=sl>/timbilding/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">2746</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/timbilding/" target="_blank">открыть →</a></td></tr><tr data-status="live" data-type="T2">
-<td>17</td>
-<td><a href="https://catalystrussia.ru/vyezdnoj-korporativ/" target="_blank"><b>Выездной корпоратив: праздник компании за городом под ключ</b></a><br><span class=sl>/vyezdnoj-korporativ/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
-<td style="text-align:center">1816</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="https://catalystrussia.ru/vyezdnoj-korporativ/" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T3">
-<td>18</td>
-<td><a href="http://localhost:8890/adaptaciya-novyh-sotrudnikov.html" target="_blank"><b>Адаптация новых сотрудников: гайд по онбордингу для HR</b></a><br><span class=sl>/adaptaciya-novyh-sotrudnikov/</span></td>
-<td>T3</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">1242</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/adaptaciya-novyh-sotrudnikov.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T2">
-<td>19</td>
-<td><a href="http://localhost:8890/konferenciya-pod-klyuch.html" target="_blank"><b>Конференция под ключ: этапы, техника зала и смета</b></a><br><span class=sl>/konferenciya-pod-klyuch/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">1664</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/konferenciya-pod-klyuch.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T2">
-<td>20</td>
-<td><a href="http://localhost:8890/korporativ-8-marta-23-fevralya.html" target="_blank"><b>Корпоратив на 8 марта и 23 февраля для всей команды</b></a><br><span class=sl>/korporativ-8-marta-23-fevralya/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">1738</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/korporativ-8-marta-23-fevralya.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T2">
-<td>21</td>
-<td><a href="http://localhost:8890/korporativ-na-prirode.html" target="_blank"><b>Организация корпоратива на природе в Москве и Подмосковье</b></a><br><span class=sl>/korporativ-na-prirode/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2172</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/korporativ-na-prirode.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T2">
-<td>22</td>
-<td><a href="http://localhost:8890/master-klass-na-korporativ.html" target="_blank"><b>Мастер-класс на корпоратив</b></a><br><span class=sl>/master-klass-na-korporativ/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">1586</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/master-klass-na-korporativ.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T3">
-<td>23</td>
-<td><a href="http://localhost:8890/organizaciya-timbildinga.html" target="_blank"><b>Организация тимбилдинга: этапы, сроки и бюджет события</b></a><br><span class=sl>/organizaciya-timbildinga/</span></td>
-<td>T3</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2065</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/organizaciya-timbildinga.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>24</td>
-<td><a href="http://localhost:8890/program-camera-action.html" target="_blank"><b>Камера! Мотор!: командный тимбилдинг</b></a><br><span class=sl>/programmy/camera-action/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">873</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-camera-action.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>25</td>
-<td><a href="http://localhost:8890/program-chaplin-races.html" target="_blank"><b>Гонки Чаплина: командный тимбилдинг</b></a><br><span class=sl>/programmy/chaplin-races/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">926</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-chaplin-races.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>26</td>
-<td><a href="http://localhost:8890/program-corporate-picture.html" target="_blank"><b>Корпоративная Картина: командный тимбилдинг</b></a><br><span class=sl>/programmy/corporate-picture/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">434</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-corporate-picture.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>27</td>
-<td><a href="http://localhost:8890/program-festival-foodtrucks.html" target="_blank"><b>Фестиваль Фудтраков: командный тимбилдинг</b></a><br><span class=sl>/programmy/festival-foodtrucks/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">543</td>
-<td style="text-align:center" title="ворота: 7.11, 7.14, 7.15, 7.7"><span style="color:#a96500;font-size:16px">⚠️</span></td>
-<td><a class=go href="http://localhost:8890/program-festival-foodtrucks.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>28</td>
-<td><a href="http://localhost:8890/program-festival-icecream.html" target="_blank"><b>Фестиваль Мороженого: командный тимбилдинг</b></a><br><span class=sl>/programmy/festival-icecream/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">426</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-festival-icecream.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>29</td>
-<td><a href="http://localhost:8890/program-formula-1.html" target="_blank"><b>Формула-1: командный тимбилдинг</b></a><br><span class=sl>/programmy/formula-1/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">445</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-formula-1.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>30</td>
-<td><a href="http://localhost:8890/program-fort-boyard.html" target="_blank"><b>Форт Боярд: командный тимбилдинг</b></a><br><span class=sl>/programmy/fort-boyard/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">866</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-fort-boyard.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>31</td>
-<td><a href="http://localhost:8890/program-goldberg-machine.html" target="_blank"><b>Машина Голдберга: командный тимбилдинг</b></a><br><span class=sl>/programmy/goldberg-machine/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">431</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-goldberg-machine.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>32</td>
-<td><a href="http://localhost:8890/kulinarnyj-timbilding.html" target="_blank"><b>Кулинарный тимбилдинг: гастро-форматы Каталист</b></a><br><span class=sl>/programmy/kulinarnyj-timbilding/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2656</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/kulinarnyj-timbilding.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>33</td>
-<td><a href="http://localhost:8890/program-megapolis-bridges.html" target="_blank"><b>Мегаполис + Мосты: командный тимбилдинг</b></a><br><span class=sl>/programmy/megapolis-bridges/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">434</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-megapolis-bridges.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>34</td>
-<td><a href="http://localhost:8890/program-megapolis.html" target="_blank"><b>Мегаполис: командный тимбилдинг</b></a><br><span class=sl>/programmy/megapolis/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">503</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-megapolis.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>35</td>
-<td><a href="http://localhost:8890/program-mehanizm-uspeha.html" target="_blank"><b>Механизм Успеха: командный тимбилдинг</b></a><br><span class=sl>/programmy/mehanizm-uspeha/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">998</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-mehanizm-uspeha.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>36</td>
-<td><a href="http://localhost:8890/program-music-label.html" target="_blank"><b>Музыкальный лейбл: командный тимбилдинг</b></a><br><span class=sl>/programmy/music-label/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">421</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-music-label.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>37</td>
-<td><a href="http://localhost:8890/neobychnyj-timbilding.html" target="_blank"><b>Необычный тимбилдинг: эксклюзивные форматы Каталист</b></a><br><span class=sl>/programmy/neobychnyj-timbilding/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2637</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/neobychnyj-timbilding.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>38</td>
-<td><a href="http://localhost:8890/program-neurogallery.html" target="_blank"><b>Нейрогалерея: командный тимбилдинг</b></a><br><span class=sl>/programmy/neurogallery/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">429</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-neurogallery.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>39</td>
-<td><a href="http://localhost:8890/novinki-timbildinga-2026.html" target="_blank"><b>Новинки тимбилдинга 2026: что попробовать команде</b></a><br><span class=sl>/programmy/novinki-timbildinga-2026/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2424</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/novinki-timbildinga-2026.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>40</td>
-<td><a href="http://localhost:8890/program-picture-by-numbers.html" target="_blank"><b>Картина по Номерам: командный тимбилдинг</b></a><br><span class=sl>/programmy/picture-by-numbers/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">411</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-picture-by-numbers.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>41</td>
-<td><a href="http://localhost:8890/program-puppet-theater.html" target="_blank"><b>Театр Марионеток: командный тимбилдинг</b></a><br><span class=sl>/programmy/puppet-theater/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">413</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-puppet-theater.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>42</td>
-<td><a href="http://localhost:8890/program-raft-races.html" target="_blank"><b>Гонки на Плотах: командный тимбилдинг</b></a><br><span class=sl>/programmy/raft-races/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">433</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-raft-races.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>43</td>
-<td><a href="http://localhost:8890/program-sound-designer.html" target="_blank"><b>Озвучка 2.0: командный тимбилдинг</b></a><br><span class=sl>/programmy/sound-designer/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">816</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-sound-designer.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>44</td>
-<td><a href="http://localhost:8890/sportivnyj-kvest.html" target="_blank"><b>Спортивный квест: командная игра по маршруту со станциями на</b></a><br><span class=sl>/programmy/sportivnyj-kvest/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2126</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/sportivnyj-kvest.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>45</td>
-<td><a href="http://localhost:8890/sportivnyj-timbilding.html" target="_blank"><b>Спортивный тимбилдинг: командные игры с общим зачётом</b></a><br><span class=sl>/programmy/sportivnyj-timbilding/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">3192</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/sportivnyj-timbilding.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>46</td>
-<td><a href="http://localhost:8890/program-startup.html" target="_blank"><b>Стартап: командный тимбилдинг</b></a><br><span class=sl>/programmy/startup/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">407</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-startup.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>47</td>
-<td><a href="http://localhost:8890/timbilding-na-prirode.html" target="_blank"><b>Тимбилдинг на природе: летние программы Каталист</b></a><br><span class=sl>/programmy/timbilding-na-prirode/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2214</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/timbilding-na-prirode.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>48</td>
-<td><a href="http://localhost:8890/timbilding-v-ofise.html" target="_blank"><b>Тимбилдинг в офисе и помещении: игры без выезда</b></a><br><span class=sl>/programmy/timbilding-v-ofise/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2596</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/timbilding-v-ofise.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>49</td>
-<td><a href="http://localhost:8890/trening-komandoobrazovanie.html" target="_blank"><b>Тренинг на командообразование</b></a><br><span class=sl>/programmy/trening-komandoobrazovanie/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">2575</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/trening-komandoobrazovanie.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T1">
-<td>50</td>
-<td><a href="http://localhost:8890/program-wow-pizza.html" target="_blank"><b>WOW Пицца: командный тимбилдинг</b></a><br><span class=sl>/programmy/wow-pizza/</span></td>
-<td>T1</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">458</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/program-wow-pizza.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T3">
-<td>51</td>
-<td><a href="http://localhost:8890/geo-moskva.html" target="_blank"><b>Тимбилдинг в Москве под ключ</b></a><br><span class=sl>/teambuilding/moskva/</span></td>
-<td>T3</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">291</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/geo-moskva.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T3">
-<td>52</td>
-<td><a href="http://localhost:8890/geo-spb.html" target="_blank"><b>Тимбилдинг в Санкт-Петербурге под ключ</b></a><br><span class=sl>/teambuilding/spb/</span></td>
-<td>T3</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">404</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/geo-spb.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T14">
-<td>53</td>
-<td><a href="http://localhost:8890/listicle-timbilding-s-neirosetyami.html" target="_blank"><b>Топ-5 тимбилдингов с нейросетями для команды в 2026 году</b></a><br><span class=sl>/teambuilding/spisok/timbilding-s-neirosetyami/</span></td>
-<td>T14</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
-<td style="text-align:center">320</td>
-<td style="text-align:center" title="ворота: word_floor"><span style="color:#a96500;font-size:16px">⚠️</span></td>
-<td><a class=go href="http://localhost:8890/listicle-timbilding-s-neirosetyami.html" target="_blank">открыть →</a></td></tr><tr data-status="new" data-type="T2">
-<td>54</td>
-<td><a href="http://localhost:8890/verevochnyj-kurs.html" target="_blank"><b>Верёвочный курс для команды</b></a><br><span class=sl>/verevochnyj-kurs/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<tbody><tr data-status="live"><td>1</td>
+<td><a href="https://catalystrussia.ru/agentstvo-prazdnikov/" target=_blank><b>Агентство корпоративных праздников для компаний</b></a><br><span class=sl>/agentstvo-prazdnikov/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">1917</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/agentstvo-prazdnikov/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>2</td>
+<td><a href="https://catalystrussia.ru/ivent-agentstvo/" target=_blank><b>Ивент-агентство в Москве: Каталист, полный цикл с 2010 года</b></a><br><span class=sl>/ivent-agentstvo/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
 <td style="text-align:center">1899</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/verevochnyj-kurs.html" target="_blank">открыть →</a></td></tr><tr data-status="draft" data-type="T2">
-<td>55</td>
-<td><a href="http://localhost:8890/chto-takoe-timbilding.html" target="_blank"><b>Что такое тимбилдинг: определение, виды и как выбрать формат</b></a><br><span class=sl>/chto-takoe-timbilding/</span></td>
-<td>T2</td>
-<td><span class=badge style="background:#a965001a;color:#a96500">📝 Черновик</span></td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/ivent-agentstvo/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>3</td>
+<td><a href="https://catalystrussia.ru/korporativ/" target=_blank><b>Корпоратив под ключ в Москве</b></a><br><span class=sl>/korporativ/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2599</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/korporativ/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>4</td>
+<td><a href="https://catalystrussia.ru/korporativnye-meropriyatiya/" target=_blank><b>Корпоративные мероприятия в Москве: от деловой сессии до бол</b></a><br><span class=sl>/korporativnye-meropriyatiya/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2078</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/korporativnye-meropriyatiya/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>5</td>
+<td><a href="https://catalystrussia.ru/novogodnij-korporativ/" target=_blank><b>Организация новогоднего корпоратива под ключ в Москве</b></a><br><span class=sl>/novogodnij-korporativ/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2251</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/novogodnij-korporativ/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>6</td>
+<td><a href="https://catalystrussia.ru/organizaciya-meropriyatiy/" target=_blank><b>Организация мероприятий под ключ в Москве</b></a><br><span class=sl>/organizaciya-meropriyatiy/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2374</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/organizaciya-meropriyatiy/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>7</td>
+<td><a href="https://catalystrussia.ru/organizaciya-prazdnika/" target=_blank><b>Организация корпоративного праздника под ключ в Москве</b></a><br><span class=sl>/organizaciya-prazdnika/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">1918</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/organizaciya-prazdnika/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>8</td>
+<td><a href="https://catalystrussia.ru/organizatsiya-korporativa/" target=_blank><b>Организация корпоратива: от брифа до отчёта за 7 этапов</b></a><br><span class=sl>/organizatsiya-korporativa/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2532</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/organizatsiya-korporativa/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>9</td>
+<td><a href="https://catalystrussia.ru/programmy/aktivnosti-na-korporativ/" target=_blank><b>Активности на корпоратив</b></a><br><span class=sl>/programmy/aktivnosti-na-korporativ/</span></td>
+<td>T1</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">3091</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/programmy/aktivnosti-na-korporativ/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>10</td>
+<td><a href="https://catalystrussia.ru/programmy/delovye-igry/" target=_blank><b>Деловые игры для сотрудников</b></a><br><span class=sl>/programmy/delovye-igry/</span></td>
+<td>T1</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2886</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/programmy/delovye-igry/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>11</td>
+<td><a href="https://catalystrussia.ru/programmy/igry-na-splochenie-kollektiva/" target=_blank><b>Игры на сплочение коллектива</b></a><br><span class=sl>/programmy/igry-na-splochenie-kollektiva/</span></td>
+<td>T1</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">3320</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/programmy/igry-na-splochenie-kollektiva/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>12</td>
+<td><a href="https://catalystrussia.ru/programmy/interaktivy-na-meropriyatiya/" target=_blank><b>Интерактивы на мероприятия</b></a><br><span class=sl>/programmy/interaktivy-na-meropriyatiya/</span></td>
+<td>T1</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">3169</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/programmy/interaktivy-na-meropriyatiya/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>13</td>
+<td><a href="https://catalystrussia.ru/programmy/kvest-dlya-komandy/" target=_blank><b>Квест для команды: сюжетные и интеллектуальные форматы</b></a><br><span class=sl>/programmy/kvest-dlya-komandy/</span></td>
+<td>T1</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2215</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/programmy/kvest-dlya-komandy/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>14</td>
+<td><a href="https://catalystrussia.ru/programmy/timbilding-s-neirosetyami/" target=_blank><b>Тимбилдинг с нейросетями: командная игра для сотрудников</b></a><br><span class=sl>/programmy/timbilding-s-neirosetyami/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2474</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/programmy/timbilding-s-neirosetyami/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>15</td>
+<td><a href="https://catalystrussia.ru/timbilding/" target=_blank><b>Тимбилдинг в Москве: более 50 авторских программ под ключ</b></a><br><span class=sl>/timbilding/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2935</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/timbilding/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>16</td>
+<td><a href="https://catalystrussia.ru/vyezdnoj-korporativ/" target=_blank><b>Выездной корпоратив: праздник компании за городом под ключ</b></a><br><span class=sl>/vyezdnoj-korporativ/</span></td>
+<td>T2</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2049</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/vyezdnoj-korporativ/" target=_blank>открыть →</a></td></tr><tr data-status="live"><td>17</td>
+<td><a href="https://catalystrussia.ru/programmy/ecoferma/" target=_blank><b>Экоферма: эко-тимбилдинг</b></a><br><span class=sl>/programmy/ecoferma/</span></td>
+<td>T1</td><td><span class=badge style="background:#0aba591a;color:#0aba59">🟢 На сайте</span></td>
+<td style="text-align:center">2566</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="https://catalystrussia.ru/programmy/ecoferma/" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>18</td>
+<td><a href="http://localhost:8890/adaptaciya-novyh-sotrudnikov.html" target=_blank><b>Адаптация новых сотрудников: гайд по онбордингу для HR</b></a><br><span class=sl>/adaptaciya-novyh-sotrudnikov/</span></td>
+<td>T3</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1242</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/adaptaciya-novyh-sotrudnikov.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>19</td>
+<td><a href="http://localhost:8890/chto-takoe-timbilding.html" target=_blank><b>Что такое тимбилдинг: определение, виды и как выбрать формат</b></a><br><span class=sl>/chto-takoe-timbilding/</span></td>
+<td>T2</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
 <td style="text-align:center">2249</td>
-<td style="text-align:center" title="готова к публикации"><span style="color:#0aba59;font-size:16px">✅</span></td>
-<td><a class=go href="http://localhost:8890/chto-takoe-timbilding.html" target="_blank">открыть →</a></td></tr></tbody></table>
-</div>
-<script>
-function flt(s,btn){document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
-document.querySelectorAll('tbody tr').forEach(tr=>{tr.style.display=(s=='all'||tr.dataset.status==s)?'':'none'})}
-</script></body></html>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/chto-takoe-timbilding.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>20</td>
+<td><a href="http://localhost:8890/konferenciya-pod-klyuch.html" target=_blank><b>Конференция под ключ: этапы, техника зала и смета</b></a><br><span class=sl>/konferenciya-pod-klyuch/</span></td>
+<td>T2</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2032</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/konferenciya-pod-klyuch.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>21</td>
+<td><a href="http://localhost:8890/korporativ-8-marta-23-fevralya.html" target=_blank><b>Корпоратив на 8 марта и 23 февраля для всей команды</b></a><br><span class=sl>/korporativ-8-marta-23-fevralya/</span></td>
+<td>T2</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1986</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/korporativ-8-marta-23-fevralya.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>22</td>
+<td><a href="http://localhost:8890/korporativ-na-prirode.html" target=_blank><b>Организация корпоратива на природе в Москве и Подмосковье</b></a><br><span class=sl>/korporativ-na-prirode/</span></td>
+<td>T2</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2582</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/korporativ-na-prirode.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>23</td>
+<td><a href="http://localhost:8890/master-klass-na-korporativ.html" target=_blank><b>Мастер-класс на корпоратив</b></a><br><span class=sl>/master-klass-na-korporativ/</span></td>
+<td>T2</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1586</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/master-klass-na-korporativ.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>24</td>
+<td><a href="http://localhost:8890/organizaciya-timbildinga.html" target=_blank><b>Организация тимбилдинга: этапы, сроки и бюджет события</b></a><br><span class=sl>/organizaciya-timbildinga/</span></td>
+<td>T3</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2434</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/organizaciya-timbildinga.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>25</td>
+<td><a href="http://localhost:8890/program-camera-action.html" target=_blank><b>Камера! Мотор!: командный тимбилдинг</b></a><br><span class=sl>/programmy/camera-action/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1120</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, keyso"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-camera-action.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>26</td>
+<td><a href="http://localhost:8890/program-chaplin-races.html" target=_blank><b>Гонки Чаплина: командный тимбилдинг</b></a><br><span class=sl>/programmy/chaplin-races/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1171</td>
+<td style="text-align:center" title="ворота: 3"><span style="color:#a96500;font-size:16px">⚠️</span></td>
+<td><a class=go href="http://localhost:8890/program-chaplin-races.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>27</td>
+<td><a href="http://localhost:8890/program-corporate-picture.html" target=_blank><b>Корпоративная Картина: командный тимбилдинг</b></a><br><span class=sl>/programmy/corporate-picture/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1010</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-corporate-picture.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>28</td>
+<td><a href="http://localhost:8890/program-festival-foodtrucks.html" target=_blank><b>Фестиваль Фудтраков: командный тимбилдинг</b></a><br><span class=sl>/programmy/festival-foodtrucks/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">832</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15, photo_floor"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-festival-foodtrucks.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>29</td>
+<td><a href="http://localhost:8890/program-festival-icecream.html" target=_blank><b>Тимбилдинг «Фестиваль Мороженого» на корпоратив</b></a><br><span class=sl>/programmy/festival-icecream/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">713</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-festival-icecream.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>30</td>
+<td><a href="http://localhost:8890/program-formula-1.html" target=_blank><b>Формула-1: командный тимбилдинг</b></a><br><span class=sl>/programmy/formula-1/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1169</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15, photo_floor"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-formula-1.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>31</td>
+<td><a href="http://localhost:8890/program-fort-boyard.html" target=_blank><b>Форт Боярд: командный тимбилдинг</b></a><br><span class=sl>/programmy/fort-boyard/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1092</td>
+<td style="text-align:center" title="ворота: 3"><span style="color:#a96500;font-size:16px">⚠️</span></td>
+<td><a class=go href="http://localhost:8890/program-fort-boyard.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>32</td>
+<td><a href="http://localhost:8890/program-goldberg-machine.html" target=_blank><b>Машина Голдберга: командный тимбилдинг</b></a><br><span class=sl>/programmy/goldberg-machine/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1028</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, photo_floor"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-goldberg-machine.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>33</td>
+<td><a href="http://localhost:8890/kulinarnyj-timbilding.html" target=_blank><b>Кулинарный тимбилдинг: гастро-форматы Каталист</b></a><br><span class=sl>/programmy/kulinarnyj-timbilding/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2707</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/kulinarnyj-timbilding.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>34</td>
+<td><a href="http://localhost:8890/program-megapolis-bridges.html" target=_blank><b>Мегаполис + Мосты: командный тимбилдинг</b></a><br><span class=sl>/programmy/megapolis-bridges/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">434</td>
+<td style="text-align:center" title="ворота: 7.11, 7.14, 7.7"><span style="color:#a96500;font-size:16px">⚠️</span></td>
+<td><a class=go href="http://localhost:8890/program-megapolis-bridges.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>35</td>
+<td><a href="http://localhost:8890/program-megapolis.html" target=_blank><b>Мегаполис: командный тимбилдинг</b></a><br><span class=sl>/programmy/megapolis/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1344</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, keyso, photo_floor"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-megapolis.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>36</td>
+<td><a href="http://localhost:8890/program-mehanizm-uspeha.html" target=_blank><b>Механизм Успеха: командный тимбилдинг</b></a><br><span class=sl>/programmy/mehanizm-uspeha/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1265</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-mehanizm-uspeha.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>37</td>
+<td><a href="http://localhost:8890/program-music-label.html" target=_blank><b>«Музыкальный лейбл»: тимбилдинг, где команда записывает песн</b></a><br><span class=sl>/programmy/music-label/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1018</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-music-label.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>38</td>
+<td><a href="http://localhost:8890/neobychnyj-timbilding.html" target=_blank><b>Необычный тимбилдинг: эксклюзивные форматы Каталист</b></a><br><span class=sl>/programmy/neobychnyj-timbilding/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2869</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/neobychnyj-timbilding.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>39</td>
+<td><a href="http://localhost:8890/program-neurogallery.html" target=_blank><b>Нейрогалерея: командный тимбилдинг</b></a><br><span class=sl>/programmy/neurogallery/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1093</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-neurogallery.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>40</td>
+<td><a href="http://localhost:8890/novinki-timbildinga-2026.html" target=_blank><b>Новинки тимбилдинга 2026: что попробовать команде</b></a><br><span class=sl>/programmy/novinki-timbildinga-2026/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2826</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/novinki-timbildinga-2026.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>41</td>
+<td><a href="http://localhost:8890/program-picture-by-numbers.html" target=_blank><b>Картина по Номерам: командный тимбилдинг</b></a><br><span class=sl>/programmy/picture-by-numbers/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">961</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-picture-by-numbers.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>42</td>
+<td><a href="http://localhost:8890/program-puppet-theater.html" target=_blank><b>Театр Марионеток: театральный тимбилдинг на корпоратив</b></a><br><span class=sl>/programmy/puppet-theater/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">864</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-puppet-theater.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>43</td>
+<td><a href="http://localhost:8890/program-raft-races.html" target=_blank><b>Гонки на Плотах: командный тимбилдинг</b></a><br><span class=sl>/programmy/raft-races/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1033</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-raft-races.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>44</td>
+<td><a href="http://localhost:8890/program-sound-designer.html" target=_blank><b>Озвучка 2.0: командный тимбилдинг</b></a><br><span class=sl>/programmy/sound-designer/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1219</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, keyso"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-sound-designer.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>45</td>
+<td><a href="http://localhost:8890/sportivnyj-kvest.html" target=_blank><b>Спортивный квест: командная игра по маршруту со станциями на</b></a><br><span class=sl>/programmy/sportivnyj-kvest/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2531</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/sportivnyj-kvest.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>46</td>
+<td><a href="http://localhost:8890/sportivnyj-timbilding.html" target=_blank><b>Спортивный тимбилдинг: командные игры с общим зачётом</b></a><br><span class=sl>/programmy/sportivnyj-timbilding/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">3691</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/sportivnyj-timbilding.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>47</td>
+<td><a href="http://localhost:8890/program-startup.html" target=_blank><b>Стартап: деловая игра для команды</b></a><br><span class=sl>/programmy/startup/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">823</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15, keyso"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-startup.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>48</td>
+<td><a href="http://localhost:8890/timbilding-na-prirode.html" target=_blank><b>Тимбилдинг на природе: летние программы Каталист</b></a><br><span class=sl>/programmy/timbilding-na-prirode/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2545</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/timbilding-na-prirode.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>49</td>
+<td><a href="http://localhost:8890/timbilding-v-ofise.html" target=_blank><b>Тимбилдинг в офисе и помещении: игры без выезда</b></a><br><span class=sl>/programmy/timbilding-v-ofise/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2730</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/timbilding-v-ofise.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>50</td>
+<td><a href="http://localhost:8890/trening-komandoobrazovanie.html" target=_blank><b>Тренинг на командообразование в игровом формате</b></a><br><span class=sl>/programmy/trening-komandoobrazovanie/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">2641</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/trening-komandoobrazovanie.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>51</td>
+<td><a href="http://localhost:8890/program-wow-pizza.html" target=_blank><b>WOW Пицца: командный тимбилдинг</b></a><br><span class=sl>/programmy/wow-pizza/</span></td>
+<td>T1</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">947</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14, 6.15, keyso"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/program-wow-pizza.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>52</td>
+<td><a href="http://localhost:8890/geo-moskva.html" target=_blank><b>Тимбилдинг в Москве под ключ</b></a><br><span class=sl>/teambuilding/moskva/</span></td>
+<td>T3</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">291</td>
+<td style="text-align:center" title="ворота: 7.10, 7.14, green_h2, no_em_dash, tov_limits"><span style="color:#a96500;font-size:16px">⚠️</span></td>
+<td><a class=go href="http://localhost:8890/geo-moskva.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>53</td>
+<td><a href="http://localhost:8890/geo-spb.html" target=_blank><b>Тимбилдинг в Санкт-Петербурге под ключ</b></a><br><span class=sl>/teambuilding/spb/</span></td>
+<td>T3</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">404</td>
+<td style="text-align:center" title="полный PASS"><span style="color:#0aba59;font-size:16px">✅</span></td>
+<td><a class=go href="http://localhost:8890/geo-spb.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>54</td>
+<td><a href="http://localhost:8890/listicle-timbilding-s-neirosetyami.html" target=_blank><b>Топ-5 тимбилдингов с нейросетями для команды в 2026 году</b></a><br><span class=sl>/teambuilding/spisok/timbilding-s-neirosetyami/</span></td>
+<td>T14</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">320</td>
+<td style="text-align:center" title="ворота: 7.10, 7.11, 7.14, brand_decl, no_em_dash, word_floor"><span style="color:#a96500;font-size:16px">⚠️</span></td>
+<td><a class=go href="http://localhost:8890/listicle-timbilding-s-neirosetyami.html" target=_blank>открыть →</a></td></tr><tr data-status="new"><td>55</td>
+<td><a href="http://localhost:8890/verevochnyj-kurs.html" target=_blank><b>Верёвочный курс для команды</b></a><br><span class=sl>/verevochnyj-kurs/</span></td>
+<td>T2</td><td><span class=badge style="background:#1d4ed81a;color:#1d4ed8">✨ Новая (черновик)</span></td>
+<td style="text-align:center">1899</td>
+<td style="text-align:center" title="ждёт вычитки/earned: 6.14"><span style="color:#1d4ed8;font-size:16px">⏳</span></td>
+<td><a class=go href="http://localhost:8890/verevochnyj-kurs.html" target=_blank>открыть →</a></td></tr></tbody></table></div>
+<script>function flt(s,b){document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+document.querySelectorAll('tbody tr').forEach(tr=>tr.style.display=(s=='all'||tr.dataset.status==s)?'':'none')}</script>
+</body></html>
